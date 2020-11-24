@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 
 import "../styles/Header.css";
-import { DARK_PINK, BLUE, YELLOW, LIGHT_GREY, DARK_GREY } from "../constants";
+import { DARK_PINK, BLUE, YELLOW, OFF_WHITE } from "../constants";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Hidden from "@material-ui/core/Hidden";
 
@@ -55,7 +55,7 @@ const Header = () => {
         <div className="header-logo">
           <HeaderLink
             title="Hi I'm Lyn"
-            color={DARK_GREY}
+            color={OFF_WHITE}
             selected={page === "about"}
           />
         </div>

@@ -8,18 +8,20 @@
 
 .about-container img {
     box-shadow: 2rem 2rem 2rem black;
-    border-radius: 100px;
-    width: 200px;
-    height: 200px;
+    border-radius: 10px;
+    width: 300px;
+    /*height: 200px;*/
 }
 
 .about-container p {
-    color: var(--dark-grey);
+    color: var(--off-white);
+    font-size: 20px;
+    line-height: 35px;
 }
 
 .about-container h2 {
-    color: var(--dark-pink);
-    font-family: monospace !important;
+    color: var(--off-white);
+    font-size: 35px;
 }
 
 .about-container a {

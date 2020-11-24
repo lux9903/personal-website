@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Lyn from "../assets/lyn.jpg";
+import Lyn from "../assets/lyn-bw.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 import ProgressiveImage from "react-progressive-image";
 import "../styles/About.css";
@@ -12,9 +12,9 @@ const About = () => {
   const useStyles = makeStyles((theme) => ({
     aboutGrid: {
       textAlign: "left",
-      maxWidth: "80rem",
+      maxWidth: "66rem",
       [theme.breakpoints.up("sm")]: {
-        padding: "20rem 0px",
+        padding: "12rem 0px",
       },
       [theme.breakpoints.down("sm")]: {
         padding: "8rem 4.5rem 3rem",
@@ -51,19 +51,20 @@ const About = () => {
         <Grid item sm={12} md={8}>
           <Fade in timeout={{ enter: 1200 }}>
             <div>
+              <h2>Hello, Su Lyn here ~</h2>
               <p>
-                Hi, Su Lyn here ~
+                <br />
+                I'm a final year student currently studying Computing and
+                Software Systems at University of Melbourne. My interests lie in
+                anything tech - especially UI/UX design and FinTech.
                 <br />
                 <br />
-                I'm a final year student from KL, Malaysia, currently studying
-                Computing and Software Systems at University of Melbourne. My
-                interests lie in anything tech - especially UI/UX design and
-                FinTech.
-                <br />
-                <br />
-                During my free time, I like to explore architectural spaces,
-                obsessively learn facts about films and watch historical dramas
-                on Netflix.
+                During my free time, I like exploring architectural spaces,
+                obsessively learning trivial facts about films and watching
+                period dramas on Netflix{" "}
+                <span style={{ fontSize: "13px" }}>
+                  (current favourite: Queen's Gambit)
+                </span>
                 <br />
                 <br />
                 Feel free to browse my past{" "}
