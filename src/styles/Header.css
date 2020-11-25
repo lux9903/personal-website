@@ -23,17 +23,17 @@
     padding-top: 3rem;
 }
 
-.header-dot {
+.header-line {
     margin-top: -0.5rem;
     opacity: 0;
     transition: opacity 200ms linear;
 }
 
-.header-link:hover .header-dot {
+.header-link:hover .header-line {
     opacity: 1;
 }
 
-.header-dot-active {
+.header-line-active {
     margin-top: -0.5rem;
     display: block;
 }

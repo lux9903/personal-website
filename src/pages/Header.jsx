@@ -7,7 +7,7 @@ import makeStyles from "@material-ui/core/styles/makeStyles";
 import Hidden from "@material-ui/core/Hidden";
 
 const HeaderLink = ({ title, color, edge, selected }) => {
-  const padding = edge ? "0rem" : "3px 10px";
+  const padding = edge ? "0rem" : "0.5px 10px";
   let link = title === "Hi I'm Lyn" ? "" : title;
 
   return (
@@ -21,8 +21,8 @@ const HeaderLink = ({ title, color, edge, selected }) => {
           {title}
         </h3>
         {title !== "Hi I'm Lyn" && (
-          <div className={selected ? "header-dot-active" : "header-dot"}>
-            <h3 style={{ color }}>•</h3>
+          <div className={selected ? "header-line-active" : "header-line"}>
+            <hr style={{ color }} />
           </div>
         )}
       </Link>
