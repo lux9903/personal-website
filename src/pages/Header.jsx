@@ -55,7 +55,7 @@ const Header = () => {
         <div className="header-logo">
           <HeaderLink
             title="Hi I'm Lyn"
-            color={OFF_WHITE}
+            color={LIGHT_GREY}
             selected={page === "about"}
           />
         </div>

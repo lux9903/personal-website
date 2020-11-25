@@ -41,10 +41,10 @@ const Error = () => {
         >
           <Grid item xs={12} sm={12} md={12}>
             <h4 className={classes.heading}>I have bad news for you 🪐</h4>
-            <h5>
+            <p>
               The page you're looking for might be removed or temporarily
               unavailable.
-            </h5>
+            </p>
             <br />
           </Grid>
         </Grid>

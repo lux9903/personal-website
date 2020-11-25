@@ -1,7 +1,8 @@
 h1,h2,h3,h4,h5 {
-    color: var(--off-white);
+    color: var(--blue);
 }
 
 p {
-    color: var(--off-white);
+    color: var(--light-grey);
+    font-size: 15px;
 }
