@@ -1,5 +1,3 @@
-import React from "react";
-
 export const LIGHT_GREY = "#CBDCD6";
 export const DARK_GREY = "#2A2B2E";
 export const ORANGE = "#E1705D";
