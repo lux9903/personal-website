@@ -13,10 +13,10 @@ const About = () => {
     aboutGrid: {
       textAlign: "left",
       maxWidth: "66rem",
-      [theme.breakpoints.up("sm")]: {
-        padding: "12rem 0px",
+      [theme.breakpoints.up("xs")]: {
+        padding: "10rem 0px",
       },
-      [theme.breakpoints.down("sm")]: {
+      [theme.breakpoints.down("xs")]: {
         padding: "8rem 4.5rem 3rem",
         minHeight: "calc(100vh - 3.5rem)",
       },

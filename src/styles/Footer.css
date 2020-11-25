@@ -1,0 +1,56 @@
+.footer-container {
+    position: fixed;
+    display: flex;
+    min-width: 100%;
+    padding: 1rem;
+    align-items: center;
+    height: 2.55rem;
+    bottom: 0;
+}
+
+.footer-copyright {
+    position: fixed;
+    left: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer-copyright p {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    cursor: default;
+}
+
+.footer-copyright h3 {
+    animation-name: fadeIn;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    cursor: default;
+}
+
+.footer-links-container {
+    position: fixed;
+    right: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer-link {
+    margin: 0px 0.7rem 0px;
+    font-size: 24px;
+}
+
+.footer-link:hover svg {
+    transform: scale(1.4);
+}
+
+.footer-link h3 {
+    transition: transform 0.15s;
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    cursor: default;
+    margin-top: -0.2rem;
+}

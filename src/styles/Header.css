@@ -5,10 +5,10 @@
     display: flex;
 }
 
-.header-container h3 {
-    padding: 0px;
-    margin: 0px;
-}
+/*.header-container h3 {*/
+/*    padding: 0px;*/
+/*    margin: 0px;*/
+/*}*/
 
 .header-logo {
     position: fixed;
