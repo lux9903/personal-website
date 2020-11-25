@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 
 import "../styles/Header.css";
-import { DARK_PINK, BLUE, YELLOW, OFF_WHITE } from "../constants";
+import { BLUE, ORANGE, OFF_WHITE, LIGHT_GREY } from "../constants";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Hidden from "@material-ui/core/Hidden";
 
@@ -64,12 +64,12 @@ const Header = () => {
         <HeaderLink title="about" color={BLUE} selected={page === "about"} />
         <HeaderLink
           title="projects"
-          color={DARK_PINK}
+          color={ORANGE}
           selected={page === "projects"}
         />
         <HeaderLink
           title="contact"
-          color={YELLOW}
+          color={LIGHT_GREY}
           selected={page === "contact"}
         />
       </div>

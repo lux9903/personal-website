@@ -4,7 +4,7 @@ import Lyn from "../assets/lyn-bw.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 import ProgressiveImage from "react-progressive-image";
 import "../styles/About.css";
-import { BLUE, YELLOW, LIGHT_PINK, DARK_PINK } from "../constants";
+import { BLUE, ORANGE, DARK_GREY } from "../constants";
 import Grid from "@material-ui/core/Grid";
 import Fade from "@material-ui/core/Fade";
 
@@ -52,25 +52,27 @@ const About = () => {
           <Fade in timeout={{ enter: 1200 }}>
             <div>
               <h2>Hello, Su Lyn here ~</h2>
+
               <p>
+                <div className="text">
+                  I'm a final year student currently studying Computing and
+                  Software Systems at University of Melbourne. My interests lie
+                  in anything tech - especially UI/UX design and FinTech.
+                </div>
                 <br />
-                I'm a final year student currently studying Computing and
-                Software Systems at University of Melbourne. My interests lie in
-                anything tech - especially UI/UX design and FinTech.
-                <br />
-                <br />
-                During my free time, I like exploring architectural spaces,
-                obsessively learning trivial facts about films and watching
-                period dramas on Netflix{" "}
-                <span style={{ fontSize: "13px" }}>
-                  (current favourite: Queen's Gambit)
-                </span>
-                <br />
+                <div className="second-text">
+                  During my free time, I like exploring architectural spaces,
+                  obsessively learning trivial facts about films and watching
+                  period dramas on Netflix{" "}
+                  <span style={{ fontSize: "13px" }}>
+                    (current favourite: Queen's Gambit)
+                  </span>
+                </div>
                 <br />
                 Feel free to browse my past{" "}
                 <Link
                   to={"/projects"}
-                  style={{ color: DARK_PINK }}
+                  style={{ color: ORANGE }}
                   className="internal-link"
                 >
                   works

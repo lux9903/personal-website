@@ -49,8 +49,9 @@
 
 :root {
   --black: #000;
-  --blue: #3BA8E8;
-  --yellow: #F4C347;
-  --light-grey: #D9D9D9;
+  --blue: #6C9D8C;
+  --orange: #E1705D;
+  --light-grey: #CBDCD6;
   --off-white: #F4EEE9;
+  --dark-grey: #999999;
 }
