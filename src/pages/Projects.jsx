@@ -5,6 +5,8 @@ import { OFF_WHITE, SLIDE_INFO } from "../constants";
 import Card from "@material-ui/core/Card";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "../styles/Projects.css";
+import Slide from "@material-ui/core/Slide";
+
 const Arrow = (props) => {
   const { direction, clickFunction } = props;
   const icon = direction === "left" ? <FaChevronLeft /> : <FaChevronRight />;
@@ -18,10 +20,22 @@ const Projects = () => {
   const { backgroundColor, color, name, type, stack, site } = content;
   const numSlides = SLIDE_INFO.length;
 
+  const [slideIn, setSlideIn] = useState(true);
+  const [slideDirection, setSlideDirection] = useState("down");
+
   const onArrowClick = (direction) => {
     const increment = direction === "left" ? -1 : 1;
     const newIndex = (index + increment + numSlides) % numSlides;
-    setIndex(newIndex);
+
+    const oppDirection = direction === "left" ? "right" : "left";
+    setSlideDirection(direction);
+    setSlideIn(false);
+
+    setTimeout(() => {
+      setIndex(newIndex);
+      setSlideDirection(oppDirection);
+      setSlideIn(true);
+    }, 500);
   };
 
   const useStyles = makeStyles(() => ({
@@ -48,9 +62,13 @@ const Projects = () => {
   return (
     <div className={classes.root}>
       <Arrow direction="left" clickFunction={() => onArrowClick("left")} />
-      <Card className={classes.projectCard}>
-        <h2>{name}</h2>
-      </Card>
+      <Slide in={slideIn} direction={slideDirection}>
+        <div>
+          <Card className={classes.projectCard}>
+            <h2>{name}</h2>
+          </Card>
+        </div>
+      </Slide>
       <Arrow direction="right" clickFunction={() => onArrowClick("right")} />
     </div>
   );
