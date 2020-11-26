@@ -40,7 +40,7 @@ const Error = () => {
           spacing={5}
         >
           <Grid item xs={12} sm={12} md={12}>
-            <h4 className={classes.heading}>I have bad news for you 🪐</h4>
+            <h4 className={classes.heading}>I have bad news for you 🔮 </h4>
             <p>
               The page you're looking for might be removed or temporarily
               unavailable.

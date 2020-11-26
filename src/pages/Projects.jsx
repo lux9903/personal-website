@@ -1,7 +1,7 @@
 // referenced from https://www.blog.karenying.com/posts/adding-transitions-to-a-react-carousel-with-material-ui
 import React, { useState } from "react";
 import makeStyles from "@material-ui/core/styles/makeStyles";
-import { OFF_WHITE, SLIDE_INFO } from "../constants";
+import { OFF_WHITE, ORANGE, SLIDE_INFO } from "../constants";
 import Card from "@material-ui/core/Card";
 import { FaChevronLeft, FaChevronRight, FaCode } from "react-icons/fa";
 import "../styles/Projects.css";
@@ -89,7 +89,7 @@ const Projects = () => {
             <Grid item xs={12} sm={12} md={6}>
               <h2>{name}</h2>
               <h4>{type}</h4>
-              <h5>{stack}</h5>
+              <h5 style={{ color: ORANGE }}>{stack}</h5>
               <p style={{ color: "black", lineHeight: "28px" }}>
                 {description}
               </p>

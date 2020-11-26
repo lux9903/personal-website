@@ -4,7 +4,7 @@ import Lyn from "../assets/lyn-bw.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 import ProgressiveImage from "react-progressive-image";
 import "../styles/About.css";
-import { BLUE, ORANGE, DARK_GREY } from "../constants";
+import { BLUE, ORANGE, DARK_GREY, LIGHT_GREY } from "../constants";
 import Grid from "@material-ui/core/Grid";
 import Fade from "@material-ui/core/Fade";
 
@@ -42,11 +42,17 @@ const About = () => {
     <div className="about-container">
       <Grid className={aboutGrid} container>
         <Grid item sm={12} md={4} className={image}>
-          <ProgressiveImage src={Lyn} placeholder="lyn image">
-            {(src, loading) => (
-              <img style={{ opacity: loading ? 0.8 : 1 }} src={src} alt="lyn" />
-            )}
-          </ProgressiveImage>
+          <Fade in timeout={{ enter: 1100 }}>
+            <ProgressiveImage src={Lyn} placeholder="lyn image">
+              {(src, loading) => (
+                <img
+                  style={{ opacity: loading ? 0.8 : 1 }}
+                  src={src}
+                  alt="lyn"
+                />
+              )}
+            </ProgressiveImage>
+          </Fade>
         </Grid>
         <Grid item sm={12} md={8}>
           <Fade in timeout={{ enter: 1200 }}>
@@ -62,8 +68,16 @@ const About = () => {
                 <br />
                 <div className="second-text">
                   During my free time, I like exploring architectural spaces,
-                  obsessively learning trivial facts about films and watching
-                  period dramas on Netflix{" "}
+                  listening to this{" "}
+                  <a
+                    href="https://www.youtube.com/watch?v=5qap5aO4i9A"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: LIGHT_GREY }}
+                  >
+                    lofi hip hop girl
+                  </a>{" "}
+                  and watching period dramas on Netflix{" "}
                   <span style={{ fontSize: "13px" }}>
                     (current favourite: Queen's Gambit)
                   </span>
