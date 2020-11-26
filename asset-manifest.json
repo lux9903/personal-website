@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.536ad2e4.chunk.css",
-    "main.js": "/static/js/main.aede5453.chunk.js",
-    "main.js.map": "/static/js/main.aede5453.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.180cac8a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.180cac8a.js.map",
-    "static/js/2.87adf707.chunk.js": "/static/js/2.87adf707.chunk.js",
-    "static/js/2.87adf707.chunk.js.map": "/static/js/2.87adf707.chunk.js.map",
-    "static/js/3.000a6769.chunk.js": "/static/js/3.000a6769.chunk.js",
-    "static/js/3.000a6769.chunk.js.map": "/static/js/3.000a6769.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.536ad2e4.chunk.css.map": "/static/css/main.536ad2e4.chunk.css.map",
-    "static/js/2.87adf707.chunk.js.LICENSE.txt": "/static/js/2.87adf707.chunk.js.LICENSE.txt",
-    "static/media/lyn-bw.10da500c.jpg": "/static/media/lyn-bw.10da500c.jpg",
-    "static/media/microhard.56dfc02f.png": "/static/media/microhard.56dfc02f.png",
-    "static/media/studyspot.c1ac79f6.png": "/static/media/studyspot.c1ac79f6.png"
+    "main.css": "/www.lowsulyn.live/static/css/main.536ad2e4.chunk.css",
+    "main.js": "/www.lowsulyn.live/static/js/main.5a26f5ba.chunk.js",
+    "main.js.map": "/www.lowsulyn.live/static/js/main.5a26f5ba.chunk.js.map",
+    "runtime-main.js": "/www.lowsulyn.live/static/js/runtime-main.0c7f4aa7.js",
+    "runtime-main.js.map": "/www.lowsulyn.live/static/js/runtime-main.0c7f4aa7.js.map",
+    "static/js/2.a238db9e.chunk.js": "/www.lowsulyn.live/static/js/2.a238db9e.chunk.js",
+    "static/js/2.a238db9e.chunk.js.map": "/www.lowsulyn.live/static/js/2.a238db9e.chunk.js.map",
+    "static/js/3.000a6769.chunk.js": "/www.lowsulyn.live/static/js/3.000a6769.chunk.js",
+    "static/js/3.000a6769.chunk.js.map": "/www.lowsulyn.live/static/js/3.000a6769.chunk.js.map",
+    "index.html": "/www.lowsulyn.live/index.html",
+    "static/css/main.536ad2e4.chunk.css.map": "/www.lowsulyn.live/static/css/main.536ad2e4.chunk.css.map",
+    "static/js/2.a238db9e.chunk.js.LICENSE.txt": "/www.lowsulyn.live/static/js/2.a238db9e.chunk.js.LICENSE.txt",
+    "static/media/lyn-bw.10da500c.jpg": "/www.lowsulyn.live/static/media/lyn-bw.10da500c.jpg",
+    "static/media/microhard.56dfc02f.png": "/www.lowsulyn.live/static/media/microhard.56dfc02f.png",
+    "static/media/studyspot.c1ac79f6.png": "/www.lowsulyn.live/static/media/studyspot.c1ac79f6.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.180cac8a.js",
-    "static/js/2.87adf707.chunk.js",
+    "static/js/runtime-main.0c7f4aa7.js",
+    "static/js/2.a238db9e.chunk.js",
     "static/css/main.536ad2e4.chunk.css",
-    "static/js/main.aede5453.chunk.js"
+    "static/js/main.5a26f5ba.chunk.js"
   ]
 }
