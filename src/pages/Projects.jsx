@@ -9,6 +9,7 @@ import Slide from "@material-ui/core/Slide";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import { HiExternalLink } from "react-icons/hi";
+import Hidden from "@material-ui/core/Hidden";
 
 const Arrow = (props) => {
   const { direction, clickFunction } = props;
@@ -50,7 +51,7 @@ const Projects = () => {
     }, 500);
   };
 
-  const useStyles = makeStyles(() => ({
+  const useStyles = makeStyles((theme) => ({
     projectCard: {
       backgroundColor: OFF_WHITE,
       borderRadius: "5%",
@@ -61,6 +62,12 @@ const Projects = () => {
       justifyContent: "center",
       width: "55rem",
       height: "23rem",
+      [theme.breakpoints.down("md")]: {
+        width: "30rem",
+      },
+      [theme.breakpoints.down("sm")]: {
+        width: "20rem",
+      },
     },
     root: {
       padding: "100px",
@@ -83,9 +90,11 @@ const Projects = () => {
       <Slide in={slideIn} direction={slideDirection}>
         <div>
           <Card className={classes.projectCard}>
-            <Grid item xs={12} sm={12} md={6}>
-              <img src={image} alt="project" />
-            </Grid>
+            <Hidden mdDown>
+              <Grid item xs={12} sm={12} md={6}>
+                <img src={image} alt="project" />
+              </Grid>
+            </Hidden>
             <Grid item xs={12} sm={12} md={6}>
               <h2>{name}</h2>
               <h4>{type}</h4>
@@ -94,7 +103,7 @@ const Projects = () => {
                 {description}
               </p>
               <Grid container>
-                <Grid item sm={12} md={12}>
+                <Grid item xs={12} sm={12} md={12}>
                   <div className="buttons">
                     <a
                       href={website}

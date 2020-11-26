@@ -1,21 +1,27 @@
 import React, { Fragment } from "react";
 import Grid from "@material-ui/core/Grid";
 import makeStyles from "@material-ui/core/styles/makeStyles";
-import { LIGHT_ORANGE, ORANGE } from "../constants";
+import { LIGHT_ORANGE } from "../constants";
 import Fade from "@material-ui/core/Fade";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     padding: theme.spacing(4, 10),
-    margin: "8rem",
+    marginTop: "5rem",
     textAlign: "left",
   },
   heading: {
     fontSize: "35px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "25px",
+    },
   },
   contacts: {
     fontSize: "31px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "19px",
+    },
   },
 }));
 
