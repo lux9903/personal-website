@@ -1,0 +1,9 @@
+ svg {
+     height: 30px;
+     cursor: pointer;
+     color: var(--light-grey)
+ }
+
+ svg:hover {
+     transform: scale(1.3);
+ }
