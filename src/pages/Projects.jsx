@@ -3,13 +3,25 @@ import React, { useState } from "react";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import { OFF_WHITE, SLIDE_INFO } from "../constants";
 import Card from "@material-ui/core/Card";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaCode } from "react-icons/fa";
 import "../styles/Projects.css";
 import Slide from "@material-ui/core/Slide";
+import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
+import { HiExternalLink } from "react-icons/hi";
 
 const Arrow = (props) => {
   const { direction, clickFunction } = props;
-  const icon = direction === "left" ? <FaChevronLeft /> : <FaChevronRight />;
+  const icon =
+    direction === "left" ? (
+      <FaChevronLeft
+        style={{ color: "white", fontSize: "35px", cursor: "pointer" }}
+      />
+    ) : (
+      <FaChevronRight
+        style={{ color: "white", fontSize: "35px", cursor: "pointer" }}
+      />
+    );
 
   return <div onClick={clickFunction}>{icon}</div>;
 };
@@ -17,7 +29,7 @@ const Arrow = (props) => {
 const Projects = () => {
   const [index, setIndex] = useState(0);
   const content = SLIDE_INFO[index];
-  const { backgroundColor, color, name, type, stack, site } = content;
+  const { name, image, type, stack, website, description, repo } = content;
   const numSlides = SLIDE_INFO.length;
 
   const [slideIn, setSlideIn] = useState(true);
@@ -42,7 +54,7 @@ const Projects = () => {
     projectCard: {
       backgroundColor: OFF_WHITE,
       borderRadius: "5%",
-      // padding: "20px 40px",
+      padding: "10px",
       margin: "0px 25px",
       boxShadow: "20px 20px 20px grey",
       display: "flex",
@@ -55,7 +67,13 @@ const Projects = () => {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      marginTop: "10rem",
+      marginTop: "6rem",
+    },
+    content: {
+      flex: "1 0 auto",
+    },
+    cover: {
+      width: 151,
     },
   }));
   const classes = useStyles();
@@ -65,7 +83,48 @@ const Projects = () => {
       <Slide in={slideIn} direction={slideDirection}>
         <div>
           <Card className={classes.projectCard}>
-            <h2>{name}</h2>
+            <Grid item xs={12} sm={12} md={6}>
+              <img src={image} alt="project" />
+            </Grid>
+            <Grid item xs={12} sm={12} md={6}>
+              <h2>{name}</h2>
+              <h4>{type}</h4>
+              <h5>{stack}</h5>
+              <p style={{ color: "black", lineHeight: "28px" }}>
+                {description}
+              </p>
+              <Grid container>
+                <Grid item sm={12} md={12}>
+                  <div className="buttons">
+                    <a
+                      href={website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <Button
+                        variant="contained"
+                        startIcon={<HiExternalLink />}
+                        style={{ marginRight: "20px" }}
+                      >
+                        Website
+                      </Button>
+                    </a>
+
+                    <a
+                      href={repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <Button variant="contained" startIcon={<FaCode />}>
+                        Code
+                      </Button>
+                    </a>
+                  </div>
+                </Grid>
+              </Grid>
+            </Grid>
           </Card>
         </div>
       </Slide>
