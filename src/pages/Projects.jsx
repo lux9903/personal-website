@@ -99,7 +99,7 @@ const Projects = () => {
               <h2>{name}</h2>
               <h4>{type}</h4>
               <h5 style={{ color: ORANGE }}>{stack}</h5>
-              <p style={{ color: "black", lineHeight: "28px" }}>
+              <p style={{ color: "black", lineHeight: "23px" }}>
                 {description}
               </p>
               <Grid container>

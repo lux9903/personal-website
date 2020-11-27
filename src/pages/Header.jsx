@@ -2,9 +2,16 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 
 import "../styles/Header.css";
-import { BLUE, ORANGE, OFF_WHITE, LIGHT_GREY } from "../constants";
+import {
+  BLUE,
+  ORANGE,
+  OFF_WHITE,
+  LIGHT_GREY,
+  LIGHT_ORANGE,
+} from "../constants";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Hidden from "@material-ui/core/Hidden";
+import Resume from "../assets/resume.pdf";
 
 const HeaderLink = ({ title, color, edge, selected }) => {
   const padding = edge ? "0rem" : "0.5px 10px";
@@ -26,6 +33,26 @@ const HeaderLink = ({ title, color, edge, selected }) => {
           </div>
         )}
       </Link>
+    </div>
+  );
+};
+
+const ResumeLink = ({ color, edge, selected }) => {
+  const padding = edge ? "0rem" : "0.5px 10px";
+
+  return (
+    <div className="header-link">
+      <a
+        href={Resume}
+        style={{ textDecoration: "none" }}
+        className={selected && "header-no-link"}
+      >
+        <h3 style={{ color, padding: padding, textAlign: "center" }}>resume</h3>
+
+        <div className={selected ? "header-line-active" : "header-line"}>
+          <hr style={{ color }} />
+        </div>
+      </a>
     </div>
   );
 };
@@ -72,6 +99,7 @@ const Header = () => {
           color={LIGHT_GREY}
           selected={page === "contact"}
         />
+        <ResumeLink color={LIGHT_ORANGE} />
       </div>
     </div>
   );

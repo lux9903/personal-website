@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Footer.css";
-import { LIGHT_GREY, DARK_GREY, BLUE, OFF_WHITE, ORANGE } from "../constants";
+import { LIGHT_GREY, DARK_GREY, BLUE, ORANGE } from "../constants";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Hidden from "@material-ui/core/Hidden";
 import withStyles from "@material-ui/core/styles/withStyles";

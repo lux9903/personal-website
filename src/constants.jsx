@@ -11,8 +11,6 @@ export const BLUE = "#6C9D8C";
 
 export const SLIDE_INFO = [
   {
-    backgroundColor: ORANGE,
-    color: ORANGE,
     name: "Microhard",
     image: Microhard,
     type: "Full stack web app",
@@ -23,14 +21,12 @@ export const SLIDE_INFO = [
     repo: "https://github.com/lux9903/COMP30022-Microhard",
   },
   {
-    backgroundColor: BLUE,
-    color: ORANGE,
     name: "StudySpot",
     image: StudySpot,
     type: "Full stack web app",
     stack: "Node.js web app with Pug",
     description:
-      "Microhard is an online platform that connects individuals to study spots suited to their needs and amenities at the right time around Melbourne.",
+      "StudySpot is an online platform that connects individuals to study spots suited to their needs and amenities at the right time around Melbourne.",
     website: "https://comp30022-microhard.herokuapp.com/",
     repo: "https://github.com/lgolangco/info30005projectrepo",
   },
