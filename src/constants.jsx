@@ -27,7 +27,7 @@ export const SLIDE_INFO = [
     stack: "Node.js web app with Pug",
     description:
       "StudySpot is an online platform that connects individuals to study spots suited to their needs and amenities at the right time around Melbourne.",
-    website: "https://comp30022-microhard.herokuapp.com/",
+    website: "http://info30005-studyspot.herokuapp.com/",
     repo: "https://github.com/lgolangco/info30005projectrepo",
   },
 ];
