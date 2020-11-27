@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.536ad2e4.chunk.css",
-    "main.js": "/static/js/main.5a26f5ba.chunk.js",
-    "main.js.map": "/static/js/main.5a26f5ba.chunk.js.map",
+    "main.js": "/static/js/main.19b6b2da.chunk.js",
+    "main.js.map": "/static/js/main.19b6b2da.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.180cac8a.js",
     "runtime-main.js.map": "/static/js/runtime-main.180cac8a.js.map",
     "static/js/2.a238db9e.chunk.js": "/static/js/2.a238db9e.chunk.js",
@@ -14,12 +14,13 @@
     "static/js/2.a238db9e.chunk.js.LICENSE.txt": "/static/js/2.a238db9e.chunk.js.LICENSE.txt",
     "static/media/lyn-bw.10da500c.jpg": "/static/media/lyn-bw.10da500c.jpg",
     "static/media/microhard.56dfc02f.png": "/static/media/microhard.56dfc02f.png",
+    "static/media/resume.6e969058.pdf": "/static/media/resume.6e969058.pdf",
     "static/media/studyspot.c1ac79f6.png": "/static/media/studyspot.c1ac79f6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.180cac8a.js",
     "static/js/2.a238db9e.chunk.js",
     "static/css/main.536ad2e4.chunk.css",
-    "static/js/main.5a26f5ba.chunk.js"
+    "static/js/main.19b6b2da.chunk.js"
   ]
 }
