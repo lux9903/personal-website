@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import { LIGHT_ORANGE } from "../constants";
 import Fade from "@material-ui/core/Fade";
-
+import Resume from "../assets/resume.pdf";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -63,6 +63,18 @@ const Contact = () => {
                   >
                     lowsulynbsc@gmail.com
                   </a>
+                </p>
+                <p className={classes.contacts}>
+                  My resume —
+                  <a
+                    href={Resume}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: LIGHT_ORANGE }}
+                  >
+                    view
+                  </a>{" "}
+                  it here
                 </p>
               </div>
             </Fade>

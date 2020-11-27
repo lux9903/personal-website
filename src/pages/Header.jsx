@@ -46,6 +46,7 @@ const ResumeLink = ({ color, edge, selected }) => {
         href={Resume}
         style={{ textDecoration: "none" }}
         className={selected && "header-no-link"}
+        target="_blank"
       >
         <h3 style={{ color, padding: padding, textAlign: "center" }}>resume</h3>
 
