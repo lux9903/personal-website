@@ -48,7 +48,7 @@ const Footer = () => {
         <div className="footer-copyright">
           <p style={{ marginRight: "1rem", color: ORANGE }}>©</p>
           <p style={{ marginRight: "1rem", color: LIGHT_GREY }}>
-            Low Su Lyn 2020
+            Low Su Lyn 2021
           </p>
         </div>
       </Hidden>
